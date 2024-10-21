@@ -1,13 +1,8 @@
 #!/bin/bash
-##############################################################
-# Created by Ori & Avishay
-# Purpose: Create k3s install role that will install k3s Control plane and worker offline
-# Date: 06/10/2024
-# Version: 1.0.2
+
 # set -x          # Enable debug mode
 set -o errexit  # Exit on any command failing 
 set -o pipefail # Return non-zero status if any part of a pipeline fails
-##############################################################
 
 
 ## Downloading needed files for the ansible playbook
