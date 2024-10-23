@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# set -x          # Enable debug mode
 set -o errexit  # Exit on any command failing 
 set -o pipefail # Return non-zero status if any part of a pipeline fails
 

@@ -1,15 +1,14 @@
-![My Image](./assets/image.png)
+
 # Purpose - K3S implementation using Ansible
 - Create k3s install role that will install k3s Control plane and worker offline - Downloading the binary, images and install script from it's origin, during the bash script into the first role's "files" folder.
 - Based on https://docs.k3s.io/installation/airgap?airgap-cluster=Single+Server+Configuration
 #### Dependencies mentioned in [INSTALLATION.md](INSTALLATION.md)
-#### Contributers mentioned in [CONTRIBUTERS.md](CONTRIBUTERS.md)
 #### Task mentioned in [TASK.md](TASK.md)
 
 ## Main Objective steps
 - Using a bash script "run_playbook.sh", the script's steps:
     - Downloads the required files to 00_copying_files/files/ to be used by the playbook
-    - Runs the Ansible Playbook "main_playbook.yaml" 
+    - Runs the Ansible Playbook "playbook.yaml" 
 
 - Ansible Playbook runs 3 seperate roles:
     - 00_copying_files: Copies offlines installation files to designated folders
